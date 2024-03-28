@@ -64,8 +64,8 @@ const Home = () => {
           <strong><sub></sub> About Me <sub></sub></strong>
           <span>
             With 5+ years in web and mobile app development, alongside graphic design prowess, I bring a wealth of experience to every project.
-            Armed with a Bachelor's in Computer Science from KNUST, Ghana, I blend theory with hands-on skills to deliver cutting-edge solutions.
-            From sleek websites to dynamic apps, I exceed industry standards, crafting intuitive experiences that resonate. Let's collaborate and elevate your digital presence together!
+            Armed with a Bachelor&apos;s in Computer Science from KNUST, Ghana, I blend theory with hands-on skills to deliver cutting-edge solutions.
+            From sleek websites to dynamic apps, I exceed industry standards, crafting intuitive experiences that resonate. Let&apos;s collaborate and elevate your digital presence together!
           </span>
           <Link href={'tel:+233558420368'} className='caps'>Contact</Link>
         </article>
