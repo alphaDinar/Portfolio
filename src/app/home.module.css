@@ -1,0 +1,244 @@
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+}
+
+.topNav nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.topNav nav a {
+  background: #F5E987;
+  color: black;
+  padding: 5px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 40px;
+}
+
+.headBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headBox .imgBoxHolder {
+  width: 240px;
+  height: 310px;
+  background: #F5E987;
+  position: relative;
+  border-radius: 200px 200px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headBox .imgBoxHolder legend {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  filter: blur(10px);
+  background: white;
+}
+
+.headBox .nameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headBox .nameBox strong {
+  font-size: 2.3rem;
+}
+
+.headBox .nameBox span {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.webBox,
+.mobileBox,
+.graphicBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.webBox .projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.webBox .projects a {
+  display: grid;
+  gap: 0.5rem;
+  position: relative;
+  color: black;
+}
+
+.webBox .projects a video {
+  width: 100%;
+  border: 2px dotted black;
+  /* height: 100%; */
+  object-fit: contain;
+}
+
+.webBox .projects a p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+  padding: 8px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.webBox .projects a p svg {
+  font-size: 1.3rem;
+}
+
+.aboutBox {
+  margin: 3vh 0;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: #5F41BD;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+
+.aboutBox .left span {
+  font-size: 4rem;
+  color: #F5E987;
+}
+
+.aboutBox .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.aboutBox .left small {
+  font-size: 0.9rem;
+}
+
+.aboutBox .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutBox .right strong {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aboutBox .right strong sub {
+  width: 30px;
+  height: 2px;
+  background: wheat;
+  display: block;
+}
+
+.aboutBox .right a {
+  font-size: 1.3rem;
+  background: #F5E987;
+  width: max-content;
+  color: black;
+  padding: 5px 10px;
+}
+
+.mobileBox .projects {
+  display: grid;
+  gap: 2rem;
+}
+
+.mobileBox .projects a {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+}
+
+.mobileBox .projects a strong {
+  color: gray;
+}
+
+.mobileBox .projects a article {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.mobileBox .projects a article img {
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.graphicBox .samples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.graphicBox .samples img {
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media all and (max-width:1000px) {
+
+  .aboutBox,
+  .aboutBox .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media all and (max-width:900px) {
+  .webBox .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mobileBox .projects a article {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width:650px) {
+  .webBox .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media all and (max-width:500px) {
+  .headBox .nameBox strong {
+    font-size: 1.8rem;
+  }
+
+  .headBox .nameBox span {
+    font-size: 0.9rem;
+  }
+
+  .mobileBox .projects a article {
+    grid-template-columns: 1fr;
+  }
+
+  .graphicBox .samples {
+    grid-template-columns: 1fr;
+  }
+}

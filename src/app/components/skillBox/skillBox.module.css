@@ -1,0 +1,60 @@
+@keyframes slideSkillBox {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translate(-100%);
+  }
+}
+
+
+.skillBox {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background: whitesmoke;
+}
+
+.skillBox div {
+  overflow: hidden;
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+}
+
+.skillBox article {
+  display: flex;
+  white-space: nowrap;
+  gap: 4rem;
+  animation: 10s slideSkillBox linear infinite;
+}
+
+.skillBox p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillBox img {
+  object-fit: contain;
+}
+
+
+@media all and (max-width:850px) {
+  .skillBox {
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width:500px) {
+  .skillBox{
+    width: 100% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}

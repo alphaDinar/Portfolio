@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+  /* font-family: "Wix Madefor Display", sans-serif; */
+  /* font-family: "Outfit", sans-serif; */
+  scroll-behavior: smooth;
+}
+
+:root {
+  --theme: #FF6000;
+  --theme: #F39217;
+  --secondary: #EFB51C;
+  --secondary: #dba612;
+  --input: #E9E9ED;
+  --pass: rgb(23, 175, 99);
+  --royal: #F5E987;
+}
+
+body::-webkit-scrollbar,
+.scroll::-webkit-scrollbar {
+  width: 8px;
+  background: gray;
+  border-radius: 40px;
+}
+
+body::-webkit-scrollbar-thumb,
+.scroll::-webkit-scrollbar-thumb {
+  background: wheat;
+  border-radius: 40px;
+}
+
+.big {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+
+  /*  */
+  padding-bottom: 5vh;
+}
+
+#box {
+  width: 80%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+@media  all and (max-width:1000px) {
+  #box{
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h3 sub {
+  width: 30px;
+  height: 2px;
+  background: black;
+  display: block;
+}
+
+.caps {
+  font-family: 'Pacifico', sans-serif;
+  font-weight: 400;
+}
