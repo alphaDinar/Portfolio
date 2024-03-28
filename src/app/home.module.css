@@ -84,7 +84,7 @@
 
 .webBox .projects a video {
   width: 100%;
-  border: 2px dotted black;
+  border: 2px solid gray;
   /* height: 100%; */
   object-fit: contain;
 }
